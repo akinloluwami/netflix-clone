@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from "./axios";
 
 function Row({title}) {
-    const [movies, setMovies] = useState([]);
+    const [movies, setMovies] = useState(['https://api.themoviedb.org/3']);
     useEffect(()=>{
         async function fecthData(){
             const requests = await axios.get(fecthUrl);
