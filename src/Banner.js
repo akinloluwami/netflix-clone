@@ -1,13 +1,15 @@
 import React, {useState} from 'react'
 
 function Banner() {
-    return (
-        const [movie, setMovie] = useState([]);
+
+    const [movie, setMovie] = useState([]);
 
         useEffect(() => {
             
-            }
-        }, [])
+        }, []);
+
+
+    return (
 
         <header>
 
