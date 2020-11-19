@@ -1,0 +1,10 @@
+.row{
+    object-fit: contain;
+    width: 100%;
+}
+.row_posters{
+    display: flex;
+}
+.row img{
+    width: 200px;
+}
