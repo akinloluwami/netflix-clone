@@ -1,21 +1,31 @@
 import React, {useState, useEffect} from 'react';
-import axios from "./axios";
+//import axios from "./axios";
+import axios from 'axios';
 
-function Row({title}) {
-    const [movies, setMovies] = useState(['https://api.themoviedb.org/3']);
+const getImg = 'https://image.tmdb.org/t/p/original/';
+
+function Row({title, fetchUrl}) {
+    const [movies, setMovies] = useState([]);
+
     useEffect(()=>{
-        async function fecthData(){
-            const requests = await axios.get(fecthUrl);
-            console.log(requests);
+        async function fetchData(){
+            const requests = await axios.get(fetchUrl);
+            setMovies(requests.data.results);
             return requests;
         }
-        fecthData();
-    }, []);
+        fetchData();
+    }, [fetchUrl]);
+    console.log(movies);
     return (
-        <div>
+        <div className="row">
             <h1>{title}</h1>
-            {/*title*/}
-            {/*container -> posters*/}
+        <div className="row_posters">
+            {movies.map(movie=>(
+
+                <img src={`${getImg}${movie.poster_path}`} alt={movie.name}/>
+
+            ))}
+        </div>
         </div>
     )
 }
