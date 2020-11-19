@@ -15,15 +15,14 @@ function Row({title, fetchUrl}) {
         }
         fetchData();
     }, [fetchUrl]);
-    console.log(movies);
+
     return (
         <div className="row">
             <h1>{title}</h1>
         <div className="row_posters">
-            {movies.map(movie=>(
 
-                <img src={`${getImg}${movie.poster_path}`} alt={movie.name}/>
-
+            {movies.map(movie=>( 
+                <img className="row_poster" src={`${getImg}${movie.poster_path}`} alt={movie.name} key={movie.id}/>
             ))}
         </div>
         </div>

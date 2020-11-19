@@ -8,6 +8,8 @@ function App() {
       <Row title="TOP RATED" fetchUrl={requests.fetchTopRated}/>
       <Row title="TRENDING NOW" fetchUrl={requests.fetchTrending}/>
       <Row title="POPULAR" fetchUrl={requests.fetchPopular}/>
+      <Row title="UPCOMING" fetchUrl={requests.fetchUpComing}/>
+
     </div>
   );
 }
