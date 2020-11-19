@@ -19,3 +19,12 @@
     cursor: pointer;
     transition: all ease 0.3s;
 }
+.row_poster_Large{
+    max-height: 250px;
+    transition: all ease 0.3s;
+}
+.row_posterLarge:hover{
+    transform: scale(1.0);
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
