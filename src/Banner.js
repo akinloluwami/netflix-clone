@@ -29,6 +29,10 @@ function Banner() {
             fetchData();
         }, []);
 
+        function truncate(str, n) {
+            return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+          }
+        
 
     return (
 
@@ -52,11 +56,11 @@ function Banner() {
 
                 <div className="banner_desc">
 
-                    <p>{movie?.overview}</p>
+                    <p>{truncate(movie?.overview, 150)}</p>
                 </div>
         </div>
 
-            
+            <div className="banner_fadeBottom"></div>
         </header>
     )
 }
