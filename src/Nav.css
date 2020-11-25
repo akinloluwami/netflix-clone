@@ -3,11 +3,11 @@
     top:0;
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    margin: auto;
+    width: 100%;
     padding: 20px;
     align-items: center;
     z-index: 1;
+    transition: all ease-in 0.5s;
 }
 .nav_logo{
     width: 100px;
@@ -23,5 +23,5 @@
 }
 .nav_black{
     background-color: #111;
-    transition: all ease-in 0.2s;
+    transition: all ease-in 0.5s;
 }
