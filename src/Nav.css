@@ -3,7 +3,8 @@
     top:0;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     padding: 20px;
     align-items: center;
     z-index: 1;
