@@ -28,7 +28,7 @@
     transition: all ease 0.3s;
 }
 .row_poster_Large:hover{
-    transform: scale(1.0);
+    transform: scale(1.08);
     cursor: pointer;
     transition: all ease 0.3s;
 }
